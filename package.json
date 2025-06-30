@@ -1,0 +1,29 @@
+{
+  "name": "clean-books-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "debug": "node --inspect-brk dist/index.js",
+    "lint": "biome lint .",
+    "format": "biome format . --write"
+  },
+  "keywords": [],
+  "author": "eleo95",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.6",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.8",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
