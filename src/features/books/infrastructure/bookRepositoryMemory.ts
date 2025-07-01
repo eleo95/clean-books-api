@@ -18,15 +18,17 @@ export class BookRepositoryMemory implements BookRepository{
         let result = [...this.books.values()];
 
         if(params.title){
+            const searchTitle = params.title.toLowerCase();
             result = result.filter(b => 
-                b.title.toLowerCase().includes(params.title!.toLowerCase())
+                b.title.toLowerCase().includes(searchTitle)
             );
         }
 
         if(params.sort){
+            const sortParams = params.sort
             result.sort((a,b) => {
-                const valA = a[params.sort!]
-                const valB = b[params.sort!]
+                const valA = a[sortParams]
+                const valB = b[sortParams]
 
                 if(typeof valA === 'string' && typeof valB === 'string'){
                     return params.order === 'desc'

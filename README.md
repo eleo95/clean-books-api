@@ -35,6 +35,8 @@ A simple and powerful RESTful API built with TypeScript, Express, and Zod for ma
 |  │       ├── domain/
 |  │       |   └── books.ts
 |  │       ├── infrastructure/
+|  │       |   └── bookRepositoryMemory.ts
+|  │       ├── repository/
 |  │       |   └── bookRepository.ts
 |  │       ├── test/
 |  │       |   └── createBook.test.ts
