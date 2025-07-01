@@ -1,4 +1,4 @@
-import { Book } from "../domain/book";
+import type { Book } from "../domain/book";
 
 
 export interface BookRepository {

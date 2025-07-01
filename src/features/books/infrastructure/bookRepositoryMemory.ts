@@ -1,5 +1,5 @@
-import { Book } from "../domain/book";
-import { BookRepository } from "../repository/bookRepository";
+import type { Book } from "../domain/book";
+import type { BookRepository } from "../repository/bookRepository";
 
 
 

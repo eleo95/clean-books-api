@@ -1,4 +1,4 @@
-import { BookRepository } from "../repository/bookRepository";
+import type { BookRepository } from "../repository/bookRepository";
 
 
 interface CreateBookInput {
