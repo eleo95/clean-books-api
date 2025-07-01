@@ -12,6 +12,6 @@ describe("CreateBook", () => {
 			title: "Test Book 1: The Prologue",
 		});
 
-		expect(await repo.findById(book.id)).toEqual(book);
+		expect(await repo.findById(book.id)).toEqual({...book, deleted:false});
 	});
 });

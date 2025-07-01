@@ -12,4 +12,5 @@ export interface BookRepository {
 	create(book: Book): Promise<void>;
 	findById(id: string): Promise<Book | null>;
 	search(params: BookSearchParams): Promise<Book[]>;
+	softDelete(id: string): Promise<boolean>;
 }

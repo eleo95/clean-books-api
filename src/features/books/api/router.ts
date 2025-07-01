@@ -43,4 +43,24 @@ router.get("/", async (req, res) => {
 	res.json(books);
 });
 
+router.delete("/", async (req, res) => {
+	try {
+		const { id } = req.query;
+
+		if (!id) {
+			throw new Error("Bad request params!");
+		}
+
+		const response = await repo.softDelete(id.toString());
+		if (!response) {
+			throw new Error("Book not found!");
+		}
+
+		res.status(200).json({ id });
+	} catch (error) {
+		console.error("Error adding book:", error);
+		res.status(500).json({ message: "Server error" });
+	}
+});
+
 export default router;

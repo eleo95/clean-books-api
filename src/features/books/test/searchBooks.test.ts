@@ -10,7 +10,7 @@ describe("BookRepositoryMemory.search", () => {
 			id: "456e4567-aa9b-1fd3-a4a6-425514174213",
 			title: "Test Book 1: The Prologue",
 		},
-		{ id: "123e4d37-ea9b-1fd3-a4aa-115533174213", title: "Test Book 2" },
+		{ id: "123e4d37-ea9b-1fd3-a4aa-115533174213", title: "Test Book 2"},
 		{
 			id: "879e4567-e39b-1fd3-a463-335514174213",
 			title: "Test Book 3: Electric Boogaloo",

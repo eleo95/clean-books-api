@@ -1,6 +1,7 @@
 export interface Book {
 	id: string; // Unique book ID
 	title: string;
+	deleted?: boolean;
 	//   author: string;
 	//   isbn: string;
 	//   genre: string;
