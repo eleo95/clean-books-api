@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
+    "dev": "nodemon src/server.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "debug": "node --inspect-brk dist/index.js",
     "lint": "biome lint .",
-    "format": "biome format . --write"
+    "format": "biome format . --write",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "eleo95",
@@ -24,6 +25,8 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "vitest": "^3.2.4",
+    "zod": "^3.25.67"
   }
 }
